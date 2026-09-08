@@ -1,30 +1,56 @@
-/* =========================================================
-   RESET
-========================================================= */
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 html {
     scroll-behavior: smooth;
+
+    /*
+       ROOT BACKGROUND
+       Prevents white overscroll areas on
+       Chrome / Safari / mobile browsers.
+    */
+    min-height: 100%;
+    background: #f3f5f7 url("assets/background4.jpg") center center / cover no-repeat;
 }
 
 
 body {
+    position: relative;
 
-    
-    min-height: 100vh;
-    background: url("assets/background4.jpg");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
+    min-height: 100%;
+    background: transparent;
+
     color: #11151a;
     font-family: "Rajdhani", sans-serif;
+
     overflow-x: hidden;
+}
+
+
+/*
+   FIXED BACKGROUND LAYER
+
+   Keeps the background visually fixed while
+   allowing the document itself to scroll normally.
+
+   This avoids the mobile browser problem caused
+   by background-attachment: fixed.
+*/
+
+body::before {
+    content: "";
+
+    position: fixed;
+    inset: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background: url("assets/background4.jpg");
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+    pointer-events: none;
+
+    z-index: -10;
 }
 
 button,
@@ -173,13 +199,6 @@ body:not(.site-started) .hero-title span {
     opacity: 0;
     transform: translateY(45px);
     filter: blur(10px);
-}
-
-body:not(.site-started) .hero-image-wrapper {
-    opacity: 0;
-    transform:
-        translateY(100px)
-        scale(.9);
 }
 
 
@@ -771,77 +790,6 @@ body:not(.site-started) .hero-image-wrapper {
 
     font-size: 12px;
 }
-
-
-/* =========================================================
-   HERO IMAGE
-========================================================= */
-
-.hero-image-wrapper {
-
-    position: relative;
-
-    height: 80vh;
-
-    display: grid;
-
-    place-items: center;
-
-    animation:
-        heroImage 1.3s
-        cubic-bezier(.2,.8,.2,1)
-        both;
-
-    animation-delay: .4s;
-}
-
-@keyframes heroImage {
-
-    from {
-
-        opacity: 0;
-
-        transform:
-            translateY(100px)
-            scale(.9);
-    }
-
-    to {
-
-        opacity: 1;
-
-        transform:
-            translateY(0)
-            scale(1);
-    }
-}
-
-.hero-image {
-
-    position: relative;
-
-    z-index: 3;
-
-    width: min(100%,650px);
-
-    bottom: 200px;
-    left: 0px;
-
-    max-height: 760px;
-
-    object-fit: contain;
-
-    filter:
-        drop-shadow(
-            0 40px 45px
-            rgba(0,0,0,.18)
-        );
-
-    transition:
-        transform .2s
-        ease-out;
-}
-
 
 /* =========================================================
    HERO SIDE TEXT
@@ -2786,41 +2734,6 @@ MOBILE — ALL PHONE SETTINGS TOGETHER
     padding-top: 15px;
 }
 
-.hero-image-wrapper {
-    width: 100%;
-
-    height: auto;
-    min-height: 0;
-
-    flex: 1;
-
-    display: flex;
-
-    align-items: flex-end;
-    justify-content: center;
-
-    margin-top: 5px;
-
-    overflow: visible;
-}
-
-.hero-image {
-    width: min(100%, 520px);
-
-    height: auto;
-
-    max-height: none;
-
-    position: relative;
-
-    bottom: 0;
-    left: 0;
-
-    object-fit: contain;
-
-    flex-shrink: 0;
-}
-
 .hero-ring.ring-one {
     width: 330px;
     height: 330px;
@@ -2835,7 +2748,6 @@ MOBILE — ALL PHONE SETTINGS TOGETHER
 .scroll-indicator {
     display: none;
 }
-
 
 /* -----------------------------------------------------
    GENERAL SECTIONS
@@ -3084,25 +2996,6 @@ SMALL PHONE — ALL SMALL PHONE SETTINGS
 .hero-meta strong {
     font-size: 10px;
 }
-
-.hero-image-wrapper {
-    width: 100%;
-
-    flex: 1;
-
-    margin-top: 0;
-
-    align-items: flex-end;
-}
-
-.hero-image {
-    width: min(115%, 500px);
-
-    max-width: none;
-
-    bottom: 0;
-}
-
 
 /* -----------------------------------------------------
    STATS
@@ -4256,3 +4149,25 @@ body::-webkit-scrollbar {
 }
 
 
+
+/* =========================================================
+   MOBILE / TABLET VIEWPORT SAFETY
+   Prevents browser overscroll from exposing a blank area.
+========================================================= */
+
+html,
+body {
+    min-height: 100%;
+}
+
+body {
+    overscroll-behavior-x: none;
+}
+
+@supports (height: 100dvh) {
+
+    #intro-screen {
+        height: 100dvh;
+    }
+
+}
