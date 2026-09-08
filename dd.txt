@@ -1,0 +1,80 @@
+landing page video
+
+
+<div id="intro-screen">
+
+    <video
+        id="intro-video"
+        autoplay
+        muted
+        playsinline
+    >
+        <source src="assets/intro-vid.mp4" type="video/mp4">
+    </video>
+
+</div>
+
+
+
+
+<video class="background-video" autoplay muted loop playsinline>
+    <source src="assets/background-video.mp4" type="video/mp4">
+</video>
+
+
+
+.background-video {
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -2;
+    pointer-events: none;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background: rgba(243, 245, 247, 0.25);
+    z-index: -1;
+    pointer-events: none;
+}
+
+
+
+/* ====== video change koira image dile*/
+
+
+css er body tag e add de
+
+background: url("assets/background4.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+
+
+
+    video embedd korle iframe reove oira dewa lagbo
+
+    <iframe
+    src="PASTE_YOUR_VIDEO_LINK_HERE"
+    title="Gameplay Clip 01"
+    allow="autoplay; fullscreen; picture-in-picture"
+    allowfullscreen>
+</iframe>
+
+weapon video js e!!!!
+
+weapon data <section></section>
+
+name: "WEAPON ALPHA", 
+        category: "ASSAULT RIFLE", 
+        video: "assets/delta/weapon-1.mp4", 
+
+
+
+
+        

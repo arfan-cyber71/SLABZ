@@ -1,0 +1,2739 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+
+    <meta
+        name="description"
+        content="Personal gaming portfolio and combat statistics dashboard."
+    >
+
+    <title>PLAYER // GAMING DATABASE</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;600;700;800&family=Rajdhani:wght@400;500;600;700&family=Share+Tech+Mono&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<!-- =========================================================
+     INTRO VIDEO
+========================================================= -->
+
+
+
+<!-- =========================================================
+     BACKGROUND
+========================================================= -->
+
+
+<div class="bg-grid"></div>
+<div class="noise"></div>
+
+<div class="cursor-glow"></div>
+
+
+<!-- =========================================================
+     NAVIGATION
+========================================================= -->
+
+<header class="topbar">
+
+    <a href="#home" class="brand">
+
+        <span class="brand-symbol">Z</span>
+
+        <span class="brand-text">SLABZ</span>
+
+    </a>
+
+
+    <nav class="desktop-nav"> 
+        <a href="#home" class="active"> HOME </a>
+        <a href="#games"> GAMES </a>
+        <a href="#stats"> STATS </a>
+        <a href="#arsenal"> ARSENAL </a>
+        <a href="#gameplay"> GAMEPLAY </a>
+        <a href="#contact"> SOCIAL </a>
+    </nav>
+
+    <button
+        class="music-button"
+        id="musicButton"
+        aria-label="Toggle music">
+
+        <span class="music-icon">
+
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+
+        </span>
+
+        <span class="music-label">
+            MUSIC
+        </span>
+
+    </button>
+
+
+    <button
+        class="mobile-menu"
+        id="mobileMenu">
+
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </button>
+
+</header>
+
+
+<!-- =========================================================
+     MOBILE NAV
+========================================================= -->
+
+<div class="mobile-nav" id="mobileNav">
+
+    <a href="#home">
+        HOME
+    </a>
+
+    <a href="#games">
+        GAMES
+    </a>
+
+    <a href="#stats">
+        STATS
+    </a>
+
+    <a href="#arsenal">
+        ARSENAL
+    </a>
+
+    <a href="#gameplay">
+        GAMEPLAY
+    </a>
+
+    <a href="#contact">
+        SOCIAL
+    </a>
+
+</div>
+
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<main>
+
+<section class="hero" id="home">
+
+    <div class="hero-content">
+
+        <div class="eyebrow reveal">
+            PLAYER DATABASE // 001
+        </div>
+
+
+        <h1 class="hero-title reveal">
+
+            <span>
+                GAME.
+            </span>
+
+            <span class="outline">
+                COMPETE.
+            </span>
+
+            <span>
+                DOMINATE.
+            </span>
+
+        </h1>
+
+
+        <p class="hero-description reveal">
+
+            A personal gaming command center tracking combat performance,
+            progression, rankings and achievements across multiple games.
+
+        </p>
+
+
+        <div class="hero-actions reveal">
+
+            <a
+                href="#stats"
+                class="primary-button"
+            >
+
+                <span>
+                    VIEW STATISTICS
+                </span>
+
+                <i>
+                    ↗
+                </i>
+
+            </a>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-image-wrapper">
+
+        <!-- REPLACE WITH YOUR IMAGE -->
+
+        <img
+            src="assets/hero.png"
+            alt="Player"
+            class="hero-image"
+        >
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     GAMES
+========================================================= -->
+
+<section
+    class="games-section section"
+    id="games"
+>
+
+    <div class="section-heading reveal">
+
+        <div>
+
+            <span class="section-number">
+                01 // LIBRARY
+            </span>
+
+            <h2>
+                MY <span>GAMES</span>
+            </h2>
+
+        </div>
+
+
+        <p>
+
+            Select a combat environment to access
+            detailed performance records.
+
+        </p>
+
+    </div>
+
+
+    <div class="game-selector">
+
+
+        <!-- DELTA FORCE -->
+
+        <button
+            class="game-card active"
+            data-game="delta"
+        >
+
+            <div class="game-number">
+                01
+            </div>
+
+            <div class="game-card-content">
+
+                <span>
+                    TACTICAL FPS
+                </span>
+
+                <h3>
+                    DELTA FORCE
+                </h3>
+
+                <p>
+                    MOBILE
+                </p>
+
+            </div>
+
+            <div class="game-arrow">
+                ↗
+            </div>
+
+        </button>
+
+
+        <!-- CODM -->
+
+        <button
+            class="game-card"
+            data-game="codm"
+        >
+
+            <div class="game-number">
+                02
+            </div>
+
+            <div class="game-card-content">
+
+                <span>
+                    MOBILE COMBAT
+                </span>
+
+                <h3>
+                    CALL OF DUTY
+                </h3>
+
+                <p>
+                    MOBILE
+                </p>
+
+            </div>
+
+            <div class="game-arrow">
+                ↗
+            </div>
+
+        </button>
+
+
+        <!-- ASPHALT -->
+
+        <button
+            class="game-card"
+            data-game="asphalt"
+        >
+
+            <div class="game-number">
+                03
+            </div>
+
+            <div class="game-card-content">
+
+                <span>
+                    ARCADE RACING
+                </span>
+
+                <h3>
+                    ASPHALT 9
+                </h3>
+
+                <p>
+                    LEGENDS UNITE
+                </p>
+
+            </div>
+
+            <div class="game-arrow">
+                ↗
+            </div>
+
+        </button>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     STATS
+========================================================= -->
+
+<section
+    class="stats-section section"
+    id="stats"
+>
+
+    <div class="stats-header reveal">
+
+        <div>
+
+            <span class="section-number">
+                02 // COMBAT DATABASE
+            </span>
+
+            <h2 id="gameTitle">
+                DELTA FORCE
+            </h2>
+
+        </div>
+
+
+        <div class="database-status">
+
+            <span></span>
+
+            LIVE DATABASE
+
+        </div>
+
+    </div>
+
+
+<!-- =========================================================
+     DELTA FORCE
+========================================================= -->
+
+<div
+    class="game-panel active"
+    id="deltaPanel"
+>
+
+
+    <!-- DELTA MODE TABS -->
+
+    <div class="mode-tabs">
+
+        <button
+            class="mode-tab active"
+            data-mode="delta-warfare"
+        >
+            WARFARE
+        </button>
+
+        <button
+            class="mode-tab"
+            data-mode="delta-operations"
+        >
+            OPERATIONS
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         DELTA WARFARE
+    ====================================================== -->
+
+    <div
+        class="mode-panel active"
+        id="delta-warfare"
+    >
+
+
+        <!-- RANK -->
+
+        <div class="rank-banner">
+
+            <div>
+
+                <span>
+                    CURRENT RANK
+                </span>
+
+                <h3>
+                    MARSHAL
+                </h3>
+
+                <strong>
+                    19 STARS
+                </strong>
+
+            </div>
+
+
+            <img
+                src="assets/delta/dfmwf.png"
+                alt="Warfare Rank"
+            >
+
+        </div>
+
+
+        <!-- STATS -->
+
+        <div class="stats-grid">
+
+            <article class="stat-card large reveal">
+
+                <span>
+                    TOTAL BATTLES
+                </span>
+
+                <strong data-count="248">
+                    0
+                </strong>
+
+                <small>
+                    COMBAT RECORD
+                </small>
+
+            </article>
+
+
+            <article class="stat-card large reveal">
+
+                <span>
+                    TOTAL PLAY TIME
+                </span>
+
+                <strong>
+                    186<span>H</span>
+                </strong>
+
+                <small>
+                    TIME IN COMBAT
+                </small>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    OPERATOR KILLS
+                </span>
+
+                <strong data-count="4821">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    TOTAL WINS
+                </span>
+
+                <strong data-count="156">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    AVG SCORE / MIN
+                </span>
+
+                <strong data-count="842">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    VEHICLES DESTROYED
+                </span>
+
+                <strong data-count="327">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card wide reveal">
+
+                <span>
+                    VEHICLE DAMAGE
+                </span>
+
+                <strong data-count="184920">
+                    0
+                </strong>
+
+                <small>
+                    TOTAL DAMAGE DEALT
+                </small>
+
+            </article>
+
+
+            <article class="stat-card rank-card reveal">
+
+                <span>
+                    MOST USED OPERATOR
+                </span>
+
+
+                <div class="operator">
+
+                    <img
+                        src="assets/delta/operator-1.png"
+                        alt="Operator"
+                    >
+
+                    <div>
+
+                        <strong>
+                            OPERATOR 01
+                        </strong>
+
+                        <small>
+                            PRIMARY
+                        </small>
+
+                    </div>
+
+                </div>
+
+            </article>
+
+        </div>
+
+
+        <!-- PERFORMANCE GRAPH -->
+
+        <div class="graph-card reveal">
+
+            <div class="graph-heading">
+
+                <div>
+
+                    <span>
+                        PERFORMANCE ANALYSIS
+                    </span>
+
+                    <h3>
+                        K/D PERFORMANCE
+                    </h3>
+
+                </div>
+
+
+                <strong>
+                    LAST 10 MATCHES
+                </strong>
+
+            </div>
+
+
+            <div class="chart">
+
+                <div class="chart-grid"></div>
+
+
+                <svg
+                    viewBox="0 0 1000 300"
+                    preserveAspectRatio="none"
+                >
+
+                    <defs>
+
+                        <linearGradient
+                            id="chartFill"
+                            x1="0"
+                            x2="0"
+                            y1="0"
+                            y2="1"
+                        >
+
+                            <stop
+                                offset="0%"
+                                stop-opacity=".35"
+                            />
+
+                            <stop
+                                offset="100%"
+                                stop-opacity="0"
+                            />
+
+                        </linearGradient>
+
+                    </defs>
+
+
+                    <path
+                        class="chart-area"
+                        d="
+                        M0 250
+                        L100 205
+                        L200 220
+                        L300 155
+                        L400 180
+                        L500 125
+                        L600 150
+                        L700 90
+                        L800 115
+                        L900 55
+                        L1000 75
+                        L1000 300
+                        L0 300
+                        Z
+                        "
+                    ></path>
+
+
+                    <path
+                        class="chart-line"
+                        d="
+                        M0 250
+                        L100 205
+                        L200 220
+                        L300 155
+                        L400 180
+                        L500 125
+                        L600 150
+                        L700 90
+                        L800 115
+                        L900 55
+                        L1000 75
+                        "
+                    ></path>
+
+                </svg>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             WEAPONS
+        ================================================== -->
+
+        <div
+            class="subsection-title reveal"
+            id="arsenal" >
+
+            <span>
+                ARSENAL // 03
+            </span>
+
+            <h3>
+                MOST USED WEAPONS
+            </h3>
+
+        </div>
+
+        <div class="weapon-grid">
+
+
+            <!-- WEAPON 01 -->
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #01
+                </span>
+
+                <img
+                    src="assets/delta/weapon-1.png"
+                    alt="Delta Force Warfare Weapon 01"
+                >
+
+                <div>
+
+                    <strong>
+                        AK-12
+                    </strong>
+
+                    <small>
+                        ASSAULT RIFLE
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- WEAPON 02 -->
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #02
+                </span>
+
+                <img
+                    src="assets/delta/weapon-2.png"
+                    alt="Delta Force Warfare Weapon 02"
+                >
+
+                <div>
+
+                    <strong>
+                        M4A1
+                    </strong>
+
+                    <small>
+                        ASSAULT RIFLE
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <!-- WEAPON 03 -->
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #03
+                </span>
+
+                <img
+                    src="assets/delta/weapon-3.png"
+                    alt="Delta Force Warfare Weapon 03"
+                >
+
+                <div>
+
+                    <strong>
+                        MP5
+                    </strong>
+
+                    <small>
+                        SUBMACHINE GUN
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         DELTA OPERATIONS
+    ====================================================== -->
+
+    <div
+        class="mode-panel"
+        id="delta-operations"
+    >
+
+
+        <!-- RANK -->
+
+        <div class="rank-banner">
+
+            <div>
+
+                <span>
+                    CURRENT RANK
+                </span>
+
+                <h3>
+                    DF PINNACLE
+                </h3>
+
+                <strong>
+                    19 STARS
+                </strong>
+
+            </div>
+
+
+            <img
+                src="assets/delta/dfmop.png"
+                alt="Operations Rank"
+            >
+
+        </div>
+
+
+        <!-- STATS -->
+
+        <div class="stats-grid">
+
+            <article class="stat-card large reveal">
+
+                <span>
+                    TOTAL BATTLES
+                </span>
+
+                <strong data-count="184">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card large reveal">
+
+                <span>
+                    TOTAL PLAY TIME
+                </span>
+
+                <strong>
+                    142<span>H</span>
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    OPERATOR KILLS
+                </span>
+
+                <strong data-count="3614">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    EXTRACTION RATE
+                </span>
+
+                <strong>
+                    50<span>%</span>
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    TOTAL WINS
+                </span>
+
+                <strong data-count="123">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    AVG EARNINGS / FAILURE
+                </span>
+
+                <strong>
+                    42K
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card wide reveal">
+
+                <span>
+                    TOTAL ASSETS
+                </span>
+
+                <strong>
+                    8.42M
+                </strong>
+
+                <small>
+                    ESTIMATED VALUE
+                </small>
+
+            </article>
+
+        </div>
+
+
+        <!-- EXTRACTION GRAPH -->
+
+        <div class="graph-card reveal">
+
+            <div class="graph-heading">
+
+                <div>
+
+                    <span>
+                        EXTRACTION ANALYSIS
+                    </span>
+
+                    <h3>
+                        SURVIVAL RATE
+                    </h3>
+
+                </div>
+
+
+                <strong>
+                    50%
+                </strong>
+
+            </div>
+
+
+            <div class="progress-chart">
+
+                <div
+                    class="progress-circle"
+                    style="--progress:50"
+                >
+
+                    <div>
+
+                        <strong>
+                            50%
+                        </strong>
+
+                        <span>
+                            EXTRACTED
+                        </span>
+
+                    </div>
+
+                </div>
+
+
+                <div class="progress-info">
+
+                    <div>
+
+                        <span>
+                            SUCCESSFUL
+                        </span>
+
+                        <strong>
+                            92
+                        </strong>
+
+                    </div>
+
+
+                    <div>
+
+                        <span>
+                            FAILED
+                        </span>
+
+                        <strong>
+                            92
+                        </strong>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             DELTA OPERATIONS WEAPONS
+        ================================================== -->
+
+        <div class="subsection-title reveal">
+
+            <span>
+                ARSENAL // 04
+            </span>
+
+            <h3>
+                MOST USED WEAPONS
+            </h3>
+
+        </div>
+
+
+        <div class="weapon-grid">
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #01
+                </span>
+
+                <img
+                    src="assets/delta/operations-weapon-1.png"
+                    alt="Delta Force Operations Weapon 01"
+                >
+
+                <div>
+
+                    <strong>
+                        AK-12
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #02
+                </span>
+
+                <img
+                    src="assets/delta/operations-weapon-2.png"
+                    alt="Delta Force Operations Weapon 02"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON BETA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #03
+                </span>
+
+                <img
+                    src="assets/delta/operations-weapon-3.png"
+                    alt="Delta Force Operations Weapon 03"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON GAMMA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     CODM
+========================================================= -->
+
+<div
+    class="game-panel"
+    id="codmPanel"
+>
+
+
+    <!-- CODM MODE TABS -->
+
+    <div class="mode-tabs">
+
+        <button
+            class="mode-tab active"
+            data-mode="codm-mp"
+        >
+            MULTIPLAYER
+        </button>
+
+
+        <button
+            class="mode-tab"
+            data-mode="codm-br"
+        >
+            BATTLE ROYALE
+        </button>
+
+
+        <button
+            class="mode-tab"
+            data-mode="codm-dmz"
+        >
+            DMZ
+        </button>
+
+
+        <button
+            class="mode-tab"
+            data-mode="codm-zombies"
+        >
+            ZOMBIES
+        </button>
+
+    </div>
+
+
+    <!-- =====================================================
+         CODM MULTIPLAYER
+    ====================================================== -->
+
+    <div
+        class="mode-panel active"
+        id="codm-mp"
+    >
+
+
+        <div class="rank-banner">
+
+            <div>
+
+                <span>
+                    CURRENT RANK
+                </span>
+
+                <h3>
+                    LEGENDARY
+                </h3>
+
+                <strong>
+                    10,000+ XP
+                </strong>
+
+            </div>
+
+
+            <img
+                src="assets/codm/codmmp.png"
+                alt="CODM Rank"
+            >
+
+        </div>
+
+
+        <div class="stats-grid">
+
+            <article class="stat-card large reveal">
+
+                <span>
+                    TOTAL MATCHES
+                </span>
+
+                <strong data-count="421">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card large reveal">
+
+                <span>
+                    TOTAL KILLS
+                </span>
+
+                <strong data-count="12480">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    K/D
+                </span>
+
+                <strong>
+                    2.91
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    AVG ACCURACY
+                </span>
+
+                <strong>
+                    78<span>%</span>
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card wide reveal">
+
+                <span>
+                    WIN RATE
+                </span>
+
+                <strong>
+                    69.1<span>%</span>
+                </strong>
+
+            </article>
+
+        </div>
+
+
+        <!-- GRAPH -->
+
+        <div class="graph-card reveal">
+
+            <div class="graph-heading">
+
+                <div>
+
+                    <span>
+                        MULTIPLAYER
+                    </span>
+
+                    <h3>
+                        MATCH PERFORMANCE
+                    </h3>
+
+                </div>
+
+            </div>
+
+
+            <div class="bars-chart">
+
+                <div style="--height:58%">
+                    <span>01</span>
+                </div>
+
+                <div style="--height:76%">
+                    <span>02</span>
+                </div>
+
+                <div style="--height:65%">
+                    <span>03</span>
+                </div>
+
+                <div style="--height:91%">
+                    <span>04</span>
+                </div>
+
+                <div style="--height:74%">
+                    <span>05</span>
+                </div>
+
+                <div style="--height:86%">
+                    <span>06</span>
+                </div>
+
+                <div style="--height:94%">
+                    <span>07</span>
+                </div>
+
+                <div style="--height:82%">
+                    <span>08</span>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- =================================================
+             CODM MULTIPLAYER WEAPONS
+        ================================================== -->
+
+        <div class="subsection-title reveal">
+
+            <span>
+                ARSENAL // 05
+            </span>
+
+            <h3>
+                MOST USED WEAPONS
+            </h3>
+
+        </div>
+
+
+        <div class="weapon-grid">
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #01
+                </span>
+
+                <img
+                    src="assets/codm/mp-weapon-1.png"
+                    alt="CODM Multiplayer Weapon 01"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON ALPHA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #02
+                </span>
+
+                <img
+                    src="assets/codm/mp-weapon-2.png"
+                    alt="CODM Multiplayer Weapon 02"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON BETA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #03
+                </span>
+
+                <img
+                    src="assets/codm/mp-weapon-3.png"
+                    alt="CODM Multiplayer Weapon 03"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON GAMMA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CODM BATTLE ROYALE
+    ====================================================== -->
+
+    <div
+        class="mode-panel"
+        id="codm-br"
+    >
+
+
+        <div class="rank-banner">
+
+            <div>
+
+                <span>
+                    CURRENT RANK
+                </span>
+
+                <h3>
+                    GRANDMASTER
+                </h3>
+
+                <strong>
+                    RANKED
+                </strong>
+
+            </div>
+
+
+            <img
+                src="assets/codm/codmbr.png"
+                alt="BR Rank"
+            >
+
+        </div>
+
+
+        <div class="stats-grid">
+
+            <article class="stat-card large reveal">
+
+                <span>
+                    MATCHES
+                </span>
+
+                <strong data-count="218">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card large reveal">
+
+                <span>
+                    WINS
+                </span>
+
+                <strong data-count="91">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    KILLS
+                </span>
+
+                <strong data-count="1462">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    AVG DAMAGE
+                </span>
+
+                <strong>
+                    842
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card wide reveal">
+
+                <span>
+                    WIN RATE
+                </span>
+
+                <strong>
+                    41.7<span>%</span>
+                </strong>
+
+            </article>
+
+        </div>
+
+
+        <!-- =================================================
+             CODM BR WEAPONS
+        ================================================== -->
+
+        <div class="subsection-title reveal">
+
+            <span>
+                ARSENAL // 06
+            </span>
+
+            <h3>
+                MOST USED WEAPONS
+            </h3>
+
+        </div>
+
+
+        <div class="weapon-grid">
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #01
+                </span>
+
+                <img
+                    src="assets/codm/br-weapon-1.png"
+                    alt="CODM Battle Royale Weapon 01"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON ALPHA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #02
+                </span>
+
+                <img
+                    src="assets/codm/br-weapon-2.png"
+                    alt="CODM Battle Royale Weapon 02"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON BETA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #03
+                </span>
+
+                <img
+                    src="assets/codm/br-weapon-3.png"
+                    alt="CODM Battle Royale Weapon 03"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON GAMMA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CODM DMZ
+    ====================================================== -->
+
+    <div
+        class="mode-panel"
+        id="codm-dmz"
+    >
+
+
+        <div class="stats-grid">
+
+            <article class="stat-card large reveal">
+
+                <span>
+                    MATCHES PLAYED
+                </span>
+
+                <strong data-count="164">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card large reveal">
+
+                <span>
+                    EXFIL RATE
+                </span>
+
+                <strong>
+                    64<span>%</span>
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    PROFIT / LOSS
+                </span>
+
+                <strong>
+                    2.14
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    TOTAL ASSETS
+                </span>
+
+                <strong>
+                    4.8M
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    KILLS
+                </span>
+
+                <strong data-count="2140">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    CONTRACTS
+                </span>
+
+                <strong data-count="386">
+                    0
+                </strong>
+
+            </article>
+
+        </div>
+
+
+        <!-- =================================================
+             CODM DMZ WEAPONS
+        ================================================== -->
+
+        <div class="subsection-title reveal">
+
+            <span>
+                ARSENAL // 07
+            </span>
+
+            <h3>
+                MOST USED WEAPONS
+            </h3>
+
+        </div>
+
+
+        <div class="weapon-grid">
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #01
+                </span>
+
+                <img
+                    src="assets/codm/dmz-weapon-1.png"
+                    alt="CODM DMZ Weapon 01"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON ALPHA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #02
+                </span>
+
+                <img
+                    src="assets/codm/dmz-weapon-2.png"
+                    alt="CODM DMZ Weapon 02"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON BETA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #03
+                </span>
+
+                <img
+                    src="assets/codm/dmz-weapon-3.png"
+                    alt="CODM DMZ Weapon 03"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON GAMMA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         CODM ZOMBIES
+    ====================================================== -->
+
+    <div
+        class="mode-panel"
+        id="codm-zombies"
+    >
+
+
+        <div class="rank-banner">
+
+            <div>
+
+                <span>
+                    ZOMBIES PROFILE
+                </span>
+
+                <h3>
+                    UNDEAD SIEGE
+                </h3>
+
+                <strong>
+                    ELITE
+                </strong>
+
+            </div>
+
+
+            <img
+                src="assets/codm/zombies-rank.png"
+                alt="Zombies Rank"
+            >
+
+        </div>
+
+
+        <div class="stats-grid">
+
+            <article class="stat-card reveal">
+
+                <span>
+                    LEVELS COMPLETED
+                </span>
+
+                <strong data-count="84">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    MVP
+                </span>
+
+                <strong data-count="31">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    HIGHEST TURRET
+                </span>
+
+                <strong>
+                    LVL 15
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    TOTAL TURRET LEVEL
+                </span>
+
+                <strong data-count="421">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    TEAMMATES RESCUED
+                </span>
+
+                <strong data-count="164">
+                    0
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card reveal">
+
+                <span>
+                    AVG DAMAGE
+                </span>
+
+                <strong>
+                    12.8K
+                </strong>
+
+            </article>
+
+        </div>
+
+
+        <!-- CAMO -->
+
+        <div class="progress-card reveal">
+
+            <div>
+
+                <span>
+                    CAMO PROGRESSION
+                </span>
+
+                <h3>
+                    OBTAINED / ACHIEVABLE
+                </h3>
+
+            </div>
+
+
+            <div class="big-progress">
+
+                <div
+                    class="progress-fill"
+                    data-progress="72"
+                ></div>
+
+            </div>
+
+
+            <div class="progress-bottom">
+
+                <strong>
+                    72 / 100
+                </strong>
+
+                <span>
+                    72%
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="stats-grid">
+
+            <article class="stat-card wide reveal">
+
+                <span>
+                    SUCCESS RATE
+                </span>
+
+                <strong>
+                    78<span>%</span>
+                </strong>
+
+            </article>
+
+
+            <article class="stat-card wide reveal">
+
+                <span>
+                    AVG DAMAGE / MATCH
+                </span>
+
+                <strong>
+                    12.8K
+                </strong>
+
+            </article>
+
+        </div>
+
+
+        <!-- =================================================
+             CODM ZOMBIES WEAPONS
+        ================================================== -->
+
+        <div class="subsection-title reveal">
+
+            <span>
+                ARSENAL // 08
+            </span>
+
+            <h3>
+                MOST USED WEAPONS
+            </h3>
+
+        </div>
+
+
+        <div class="weapon-grid">
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #01
+                </span>
+
+                <img
+                    src="assets/codm/zombies-weapon-1.png"
+                    alt="CODM Zombies Weapon 01"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON ALPHA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #02
+                </span>
+
+                <img
+                    src="assets/codm/zombies-weapon-2.png"
+                    alt="CODM Zombies Weapon 02"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON BETA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+
+            <div class="weapon-card reveal">
+
+                <span>
+                    #03
+                </span>
+
+                <img
+                    src="assets/codm/zombies-weapon-3.png"
+                    alt="CODM Zombies Weapon 03"
+                >
+
+                <div>
+
+                    <strong>
+                        WEAPON GAMMA
+                    </strong>
+
+                    <small>
+                        PRIMARY
+                    </small>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     ASPHALT 9
+========================================================= -->
+
+<div
+    class="game-panel"
+    id="asphaltPanel"
+>
+
+
+    <!-- RANK -->
+
+    <div class="rank-banner">
+
+        <div>
+
+            <span>
+                GAUNTLET DIVISION
+            </span>
+
+            <h3>
+                ELITE
+            </h3>
+
+            <strong>
+                TOP TIER
+            </strong>
+
+        </div>
+
+
+        <div class="rank-placeholder">
+            A9
+        </div>
+
+    </div>
+
+
+    <!-- STATS -->
+
+    <div class="stats-grid">
+
+        <article class="stat-card large reveal">
+
+            <span>
+                TOTAL CARS OWNED
+            </span>
+
+            <strong data-count="94">
+                0
+            </strong>
+
+        </article>
+
+
+        <article class="stat-card large reveal">
+
+            <span>
+                GARAGE COMPLETION
+            </span>
+
+            <strong>
+                72<span>%</span>
+            </strong>
+
+        </article>
+
+
+        <article class="stat-card reveal">
+
+            <span>
+                GAUNTLET DIVISION
+            </span>
+
+            <strong>
+                ELITE
+            </strong>
+
+        </article>
+
+
+        <article class="stat-card reveal">
+
+            <span>
+                RANK
+            </span>
+
+            <strong>
+                #18
+            </strong>
+
+        </article>
+
+    </div>
+
+
+    <!-- CARS -->
+
+    <div class="subsection-title reveal">
+
+        <span>
+            GARAGE // TOP 05
+        </span>
+
+        <h3>
+            HIGHEST RANKED CARS
+        </h3>
+
+    </div>
+
+
+    <div class="car-grid">
+
+
+        <!-- CAR 01 -->
+
+        <article class="car-card reveal">
+
+            <div class="car-number">
+                01
+            </div>
+
+            <img
+                src="assets/asphalt/car-1.png"
+                alt="Car"
+            >
+
+            <div class="car-info">
+
+                <span>
+                    RIMAC
+                </span>
+
+                <h3>
+                    NEVERA
+                </h3>
+
+            </div>
+
+
+            <button
+                class="video-button"
+                data-video="assets/asphalt/car-1.mp4"
+            >
+                WATCH UNLOCK ↗
+            </button>
+
+        </article>
+
+
+        <!-- CAR 02 -->
+
+        <article class="car-card reveal">
+
+            <div class="car-number">
+                02
+            </div>
+
+            <img
+                src="assets/asphalt/car-2.png"
+                alt="Car"
+            >
+
+            <div class="car-info">
+
+                <span>
+                    SSC
+                </span>
+
+                <h3>
+                    ULTIMATE AERO TT
+                </h3>
+
+            </div>
+
+
+            <button
+                class="video-button"
+                data-video="assets/asphalt/car-2.mp4"
+            >
+                WATCH UNLOCK ↗
+            </button>
+
+        </article>
+
+
+        <!-- CAR 03 -->
+
+        <article class="car-card reveal">
+
+            <div class="car-number">
+                03
+            </div>
+
+            <img
+                src="assets/asphalt/car-3.png"
+                alt="Car"
+            >
+
+            <div class="car-info">
+
+                <span>
+                    VISION
+                </span>
+
+                <h3>
+                    1789
+                </h3>
+
+            </div>
+
+
+            <button
+                class="video-button"
+                data-video="assets/asphalt/car-3.mp4"
+            >
+                WATCH UNLOCK ↗
+            </button>
+
+        </article>
+
+
+        <!-- CAR 04 -->
+
+        <article class="car-card reveal">
+
+            <div class="car-number">
+                04
+            </div>
+
+            <img
+                src="assets/asphalt/car-4.png"
+                alt="Car"
+            >
+
+            <div class="car-info">
+
+                <span>
+                    NISSAN
+                </span>
+
+                <h3>
+                    SKYLINE GT-R R34
+                </h3>
+
+            </div>
+
+
+            <button
+                class="video-button"
+                data-video="assets/asphalt/car-4.mp4"
+            >
+                WATCH UNLOCK ↗
+            </button>
+
+        </article>
+
+
+        <!-- CAR 05 -->
+
+        <article class="car-card reveal">
+
+            <div class="car-number">
+                05
+            </div>
+
+            <img
+                src="assets/asphalt/car-5.png"
+                alt="Car"
+            >
+
+            <div class="car-info">
+
+                <span>
+                    LAMBORGHINI
+                </span>
+
+                <h3>
+                    CENTENARIO
+                </h3>
+
+            </div>
+
+
+            <button
+                class="video-button"
+                data-video="assets/asphalt/car-5.mp4"
+            >
+                WATCH UNLOCK ↗
+            </button>
+
+        </article>
+
+    </div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     SOCIAL / CONTACT
+========================================================= -->
+
+<section
+    class="contact-section section"
+    id="contact"
+>
+
+    <div class="contact-inner reveal">
+
+        <span class="section-number">
+            03 // CONNECTION
+        </span>
+
+
+        <h2>
+
+            FIND ME<br>
+
+            <span>
+                ONLINE.
+            </span>
+
+        </h2>
+
+
+        <p>
+
+            Follow the journey, watch the gameplay,
+            or connect through the networks below.
+
+        </p>
+
+
+        <div class="social-grid">
+
+
+            <!-- INSTAGRAM -->
+
+            <a
+                href="YOUR_INSTAGRAM_LINK"
+                target="_blank"
+                rel="noopener"
+            >
+
+                <span>
+                    01
+                </span>
+
+                INSTAGRAM
+
+                <b>
+                    ↗
+                </b>
+
+            </a>
+
+
+            <!-- YOUTUBE -->
+
+            <a
+                href="YOUR_YOUTUBE_LINK"
+                target="_blank"
+                rel="noopener"
+            >
+
+                <span>
+                    02
+                </span>
+
+                YOUTUBE
+
+                <b>
+                    ↗
+                </b>
+
+            </a>
+
+
+            <!-- DISCORD -->
+
+            <a
+                href="YOUR_DISCORD_LINK"
+                target="_blank"
+                rel="noopener"
+            >
+
+                <span>
+                    03
+                </span>
+
+                DISCORD
+
+                <b>
+                    ↗
+                </b>
+
+            </a>
+
+
+            <!-- TIKTOK -->
+
+            <a
+                href="YOUR_TIKTOK_LINK"
+                target="_blank"
+                rel="noopener"
+            >
+
+                <span>
+                    04
+                </span>
+
+                TIKTOK
+
+                <b>
+                    ↗
+                </b>
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- =========================================================
+     GAMEPLAY
+========================================================= -->
+
+<section class="section gameplay-section" id="gameplay">
+
+    <div class="section-heading">
+        <div>
+            <span class="section-kicker">BOTPLAYS // GAMEPLAY ARCHIVE</span>
+            <h2>GAMEPLAY</h2>
+        </div>
+
+        <p>
+            GAMEPLAY CLIPS // COMBAT MOMENTS // HIGHLIGHTS
+        </p>
+    </div>
+
+    <div class="gameplay-grid">
+
+        <!-- CLIP 01 -->
+        <article class="gameplay-card">
+            <div class="gameplay-video">
+                <iframe
+                   width="891" height="501" src="https://www.youtube.com/embed/8jx3aE06gZI" title="“SCYTHE” — Prod. By ØRCA" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="gameplay-info">
+                <span>CLIP 01</span>
+                <h3>GAMEPLAY HIGHLIGHT</h3>
+                <p>YOUR CLIP DESCRIPTION</p>
+            </div>
+        </article>
+
+
+        <!-- CLIP 02 -->
+        <article class="gameplay-card">
+            <div class="gameplay-video">
+                <iframe
+                    src="PASTE_YOUR_VIDEO_LINK_HERE"
+                    title="Gameplay Clip 02"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="gameplay-info">
+                <span>CLIP 02</span>
+                <h3>GAMEPLAY HIGHLIGHT</h3>
+                <p>YOUR CLIP DESCRIPTION</p>
+            </div>
+        </article>
+
+
+        <!-- CLIP 03 -->
+        <article class="gameplay-card">
+            <div class="gameplay-video">
+                <iframe
+                    src="PASTE_YOUR_VIDEO_LINK_HERE"
+                    title="Gameplay Clip 03"
+                    allow="autoplay; fullscreen; picture-in-picture"
+                    allowfullscreen>
+                </iframe>
+            </div>
+
+            <div class="gameplay-info">
+                <span>CLIP 03</span>
+                <h3>GAMEPLAY HIGHLIGHT</h3>
+                <p>YOUR CLIP DESCRIPTION</p>
+            </div>
+        </article>
+
+
+        <!-- COPY THIS CARD FOR MORE CLIPS -->
+
+    </div>
+
+</section>
+
+
+</main>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+
+<footer>
+
+    <div>
+
+        <strong>
+            PLAYER // DATABASE
+        </strong>
+
+        <span>
+            PERSONAL GAMING ARCHIVE
+        </span>
+
+    </div>
+
+
+    <div>
+
+        © 2026 // ALL SYSTEMS ACTIVE
+
+    </div>
+
+</footer>
+
+
+<!-- =========================================================
+     VIDEO MODAL
+========================================================= -->
+
+<div
+    class="video-modal"
+    id="videoModal"
+>
+
+    <button
+        class="video-close"
+        id="videoClose"
+    >
+        ×
+    </button>
+
+
+    <video
+        id="unlockVideo"
+        controls
+        playsinline
+    ></video>
+
+</div>
+
+
+<!-- =========================================================
+     AUDIO
+========================================================= -->
+
+<audio
+    id="themeMusic"
+    src="assets/audio/theme.m4a"
+    loop
+    preload="auto">
+</audio>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script src="script.js"></script>
+
+</body>
+</html>
